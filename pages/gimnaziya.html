@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первая гимназия</title>
+    <link rel="stylesheet" href="/css/info-page.css">
+</head>
+<body data-monument="pervaya-gimnaziya">
+    <header class="site-header">
+        <nav class="top-nav" id="topNav">
+            <div class="nav-group-left" id="navLeft"></div>
+            <div class="nav-group-right" id="navRight"></div>
+        </nav>
+    </header>
+
+    <main class="app-container">
+        <section id="page-main" class="page active">
+            <div class="main-layout">
+                <div class="main-image-col">
+                    <div class="hero-image-wrapper">
+                        <img src="/images/gimnaziya/gimnazglav.jpg" alt="Первая гимназия" class="hero-image" loading="eager" decoding="async">
+                    </div>
+                </div>
+                <div class="main-text-col">
+                    <div class="welcome-section">
+                        <h1 class="hero-title">Первая гимназия</h1>
+                        <p class="welcome-text"><strong>Первая гимназия</strong> — старейшее учебное заведение города Владимира, история которого насчитывает более 230 лет! Узнай больше фактов о знаменитой кузнице знаний и проверь свою память, ответив на вопросы теста, или проверь свои знания сразу, перейдя к тесту!</p>
+                    </div>
+                    <div class="nav-cards">
+                        <div class="nav-card" onclick="switchPage('page-info')">
+                            <span class="nav-card-icon">🔍</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Узнай больше!</h3>
+                                <p class="nav-card-desc">История, архитектура, традиции и интересные факты в раскрывающихся карточках.</p>
+                            </div>
+                        </div>
+                        <div class="nav-card" onclick="switchPage('page-tasks')">
+                            <span class="nav-card-icon">✏️</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Проверь себя!</h3>
+                                <p class="nav-card-desc">Проверь свои знания с помощью увлекательных заданий и тестов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-info" class="page">
+            <div class="info-hero">
+                <div class="hero-image-wrapper">
+                    <img src="/images/gimnaziya/gimnaz4.jpg" alt="Первая женская гимназия" class="hero-image" loading="eager" decoding="async">
+                </div>
+                <h1 class="hero-title">Первая гимназия</h1>
+                <p class="hero-subtitle">Старейшее учебное заведение Владимира</p>
+            </div>
+            <p class="section-subtitle">Нажми на карточку, чтобы прочитать подробнее</p>
+            <div class="cards-grid">
+                <div class="card" data-card="1">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏛️</span><span class="card-title">История основания</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Учебное заведение было основано в 1870 году как земская женская гимназия – первая средняя школа для девочек в губернии.</p><p>В годы Великой Отечественной войны школа была отдана под <strong>эвакогоспиталь № 1887</strong>.</p><p></p></p></div></div>
+                </div>
+                <div class="card" data-card="2">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏗️</span><span class="card-title">Архитектура здания</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Здание гимназии является ярким примером архитектуры <strong>классицизма</strong>.</p><p>В <strong>1870 году</strong> под нее был выкуплен за 17 тысяч рублей у владимирского дворянства каменный двухэтажный дом у Золотых ворот, при нем два одноэтажных каменных флигеля и два деревянных с надворными строениями. Летом приступили к внутренней перестройке главного здания и флигелей под наблюдением губернского архитектора Николая Артлебена. 3 ноября (22 октября по старому стилю) того же года Владимирская земская женская гимназия распахнула свои двери.</p></div></div>
+                </div>
+                <div class="card" data-card="3">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">📖</span><span class="card-title">Образовательные традиции</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Среди предметов, преподававшихся в гимназии, были Закон Божий, русский язык с церковно-славянским и русская словесность, история, география, естественные науки, иностранные языки (латинский, немецкий и французский), методика преподавания русского языка, арифметики, географии, а также чистописание, гимнастика, танцы, рукоделие.</p><p>При гимназии существовал <strong>пансион</strong>, проживание в котором, как и обучение, было платным. В гимназию принимали девочек всех сословий по результатам экзаменов.</p><p>В середине XX века гимназия перешла к формату <strong>смешанного обучения</strong>.</p></div></div>
+                </div>
+                <div class="card" data-card="4">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🎓</span><span class="card-title">Известные выпускники</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>В 1884 году женскую гимназию с отличием окончила профессиональная революционерка <strong>Ольга Варенцова</strong>.</p><p>Гимназию вместе с Варенцовой окончила <strong>Варвара Златовратская</strong>, сестра известного владимирского писателя-народника Николая Златовратского.</p><p>В послевоенное время школу № 1 закончил известный актер театра и кино <strong>Валерий Хлевинский</strong>.</p></div></div>
+                </div>
+                <div class="card" data-card="5">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🌟</span><span class="card-title">Гимназия сегодня</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Последний выпуск женской гимназии состоялся в <strong>1918 году<strong>. С 1934 года в здании у Золотых ворот разместилась <strong>средняя школа № 1</strong>.</p><p>В 2000 году бывшая земская женская гимназия стала школой с углубленным изучением предметов художественно-эстетического цикла.</p></div></div>
+                </div>
+                <div class="card" data-card="6">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🗺️</span><span class="card-title">Где находится?</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Первая гимназия расположена в историческом центре Владимира, в шаговой доступности от главных достопримечательностей города.</p><p><strong>Адрес:</strong> г. Владимир, исторический центр города.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-tasks" class="page">
+            <div class="test-container">
+                <div class="progress-bar-wrapper"><div class="progress-bar-fill" id="progressFill" style="width: 16.6%"></div></div>
+                <p class="progress-text" id="progressText">Вопрос 1 из 6</p>
+
+                <div class="task-slide active" id="slide1">
+                    <div class="task-block" id="task1">
+                        <div class="test-image-wrapper"><img src="/images/gimnaziya/gimnaz1.jpg" alt="Задание 1" class="test-question-image" loading="eager" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 1: Выбери правильный ответ</h2>
+                            <p class="task-question">В каком году было основано учебное заведение, ставшее Первой гимназией?</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q1" value="a"><span>1786 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="b"><span>1812 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="c"><span>1864 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="d"><span>1912 год</span></label>
+                            </div>
+                            <button class="check-btn" data-task="1">Проверить</button>
+                            <p class="feedback" id="feedback1"></p>
+                            <button class="next-slide-btn" data-target="slide2" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide2">
+                    <div class="task-block" id="task2">
+                        <div class="test-image-wrapper"><img src="/images/gimnaziya/gimnaz2.jpg" alt="Задание 2" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 2: Выбери правильный ответ</h2>
+                            <p class="task-question">Какое первоначальное название носила гимназия?</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q2" value="a"><span>Главное народное училище</span></label>
+                                <label class="option"><input type="radio" name="q2" value="b"><span>Духовная семинария</span></label>
+                                <label class="option"><input type="radio" name="q2" value="c"><span>Реальное училище</span></label>
+                                <label class="option"><input type="radio" name="q2" value="d"><span>Уездное училище</span></label>
+                            </div>
+                            <button class="check-btn" data-task="2">Проверить</button>
+                            <p class="feedback" id="feedback2"></p>
+                            <button class="next-slide-btn" data-target="slide3" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide3">
+                    <div class="task-block" id="task3">
+                        <div class="test-image-wrapper"><img src="/images/gimnaziya/gimnaz3.png" alt="Задание 3" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 3: Верно или неверно?</h2>
+                            <p class="task-question">Здание гимназии построено в архитектурном стиле классицизма.</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q3" value="a"><span>Верно ✅</span></label>
+                                <label class="option"><input type="radio" name="q3" value="b"><span>Неверно ❌</span></label>
+                            </div>
+                            <button class="check-btn" data-task="3">Проверить</button>
+                            <p class="feedback" id="feedback3"></p>
+                            <button class="next-slide-btn" data-target="slide4" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide4">
+                    <div class="task-block" id="task4">
+                        <div class="test-image-wrapper"><img src="/images/gimnaziya/gimnaz4.jpg" alt="Задание 4" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 4: Вставь пропущенное слово</h2>
+                            <p class="task-question">В гимназии традиционно изучали не только точные науки, но и историю, литературу, а также ______: латинский, греческий, немецкий, французский.</p>
+                            <div class="fill-blank">
+                                <input type="text" id="answer4" placeholder="Введи слово..." class="fill-input">
+                                <button class="check-btn" data-task="4">Проверить</button>
+                            </div>
+                            <p class="feedback" id="feedback4"></p>
+                            <button class="next-slide-btn" data-target="slide5" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide5">
+                    <div class="task-block" id="task5">
+                        <div class="test-image-wrapper"><img src="/images/gimnaziya/gimnaz5.jpg" alt="Задание 5" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 5: Верно или неверно?</h2>
+                            <p class="task-question">Изначально гимназия являлась пансионом, в котором жили и обучались только девочки.</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q5" value="a"><span>Верно ✅</span></label>
+                                <label class="option"><input type="radio" name="q5" value="b"><span>Неверно ❌</span></label>
+                            </div>
+                            <button class="check-btn" data-task="5">Проверить</button>
+                            <p class="feedback" id="feedback5"></p>
+                            <button class="next-slide-btn" data-target="slide6" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide6">
+                    <div class="task-block" id="task6">
+                        <div class="test-image-wrapper"><img src="/images/gimnaziya/gimnaz6.jpg" alt="Задание 6" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 6: Вставь пропущенное слово</h2>
+                            <p class="task-question">В годы Великой Отечественной войны в здании школы располагался ______________.</p>
+                            <div class="fill-blank">
+                                <input type="text" id="answer6" placeholder="Введи слово..." class="fill-input">
+                                <button class="check-btn" data-task="6">Проверить</button>
+                            </div>
+                            <p class="feedback" id="feedback6"></p>
+                            <button class="next-slide-btn" data-target="results" style="display: none;">Завершить тест</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-slide" id="resultsSlide">
+                    <div class="results-block">
+                        <h2 class="results-title">Твои результаты</h2>
+                        <p class="results-text" id="resultsText"></p>
+                        <table class="results-table">
+                            <thead><tr><th>Задание</th><th>Результат</th></tr></thead>
+                            <tbody id="resultsBody"></tbody>
+                        </table>
+                        <div class="results-buttons">
+                            <button class="retry-btn" id="retryBtn">Пройти заново</button>
+                            <button class="back-to-map-btn" id="backToMapBtn">🗺️ Вернуться к карте</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/info-page.js"></script>
+
+    <script>
+    const CORRECT = { 
+        1: 'a', 
+        2: 'a', 
+        3: 'a', 
+        4: 'языки', 
+        5: 'b', 
+        6: 'госпиталь' 
+    };
+    
+    const EXPLANATIONS = {
+        1: 'Учебное заведение было основано в 1786 году как Главное народное училище, что делает его одним из старейших в России.',
+        2: 'При основании по указу Екатерины II учреждение получило название Главное народное училище, и лишь позже было преобразовано в гимназию.',
+        3: 'Здание гимназии является ярким примером архитектуры классицизма с его строгостью, симметрией фасада и гармонией пропорций.',
+        4: 'Классическое гимназическое образование обязательно включало изучение древних и новых языков (латыни, греческого, французского и др.).',
+        5: 'В гимназию принимали девочек всех сословий по результатам экзаменов.',
+        6: 'В годы Великой Отечественной войны школа была отдана под эвакогоспиталь № 1887, а дети учились в небольшом здании на улице Муромской.'
+    };
+</script>
+</body>
+</html>
+

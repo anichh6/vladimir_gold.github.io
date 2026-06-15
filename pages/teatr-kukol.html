@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Театр кукол</title>
+    <link rel="stylesheet" href="/css/info-page.css">
+</head>
+<body data-monument="teatr-kukol">
+    <header class="site-header">
+        <nav class="top-nav" id="topNav">
+            <div class="nav-group-left" id="navLeft"></div>
+            <div class="nav-group-right" id="navRight"></div>
+        </nav>
+    </header>
+
+    <main class="app-container">
+        <section id="page-main" class="page active">
+            <div class="main-layout">
+                <div class="main-image-col">
+                    <div class="hero-image-wrapper">
+                        <img src="/images/kukla/kuklaglav.jpg" alt="Театр кукол" class="hero-image" loading="eager" decoding="async">
+                    </div>
+                </div>
+                <div class="main-text-col">
+                    <div class="welcome-section">
+                        <h1 class="hero-title">Театр кукол</h1>
+                        <p class="welcome-text"><strong>Владимирский областной театр кукол</strong> — это место, где оживают сказки! Расположенный в историческом здании в центре города, он дарит волшебство зрителям всех возрастов уже много десятилетий. Узнай больше фактов об этом удивительном театре и проверь свою память, ответив на вопросы теста!</p>
+                    </div>
+                    <div class="nav-cards">
+                        <div class="nav-card" onclick="switchPage('page-info')">
+                            <span class="nav-card-icon">🔍</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Узнай больше!</h3>
+                                <p class="nav-card-desc">История, архитектура, репертуар и интересные факты в раскрывающихся карточках.</p>
+                            </div>
+                        </div>
+                        <div class="nav-card" onclick="switchPage('page-tasks')">
+                            <span class="nav-card-icon">✏️</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Проверь себя!</h3>
+                                <p class="nav-card-desc">Проверь свои знания с помощью увлекательных заданий и тестов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-info" class="page">
+            <div class="info-hero">
+                <div class="hero-image-wrapper">
+                    <img src="/images/kukla/kuklainfo.jpg" alt="Театр кукол" class="hero-image" loading="eager" decoding="async">
+                </div>
+                <h1 class="hero-title">Театр кукол</h1>
+                <p class="hero-subtitle">Хранитель сказок и магической атмосферы Владимира</p>
+            </div>
+            <p class="section-subtitle">Нажми на карточку, чтобы прочитать подробнее</p>
+            <div class="cards-grid">
+                <div class="card" data-card="1">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏛️</span><span class="card-title">История создания</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Владимирский областной театр кукол создан в сентябре 1969 года.</p><p>За годы работы театр стал настоящей культурной традицией для нескольких поколений владимирцев.</p></div></div>
+                </div>
+                <div class="card" data-card="2">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏗️</span><span class="card-title">Архитектура здания</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>В 1973 году театр кукол получил здание бывшего Народного дома на ул. Гагарина, 7.</p><p>Здание было построено в 1905 году по проекту известного владимирского архитектора Я.Г. Ревякина и выполнено в стиле классицизма.</p></div></div>
+                </div>
+                <div class="card" data-card="3">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🎭</span><span class="card-title">Репертуар</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Репертуар театра очень разнообразен. Здесь ставят как классические сказки (по мотивам произведений Андерсена, Пушкина, Чуковского), так и современные пьесы.</p><p>Театр создаёт спектакли не только для детей, но и для взрослой аудитории, поднимая глубокие философские темы.</p><p>Основу репертуара составляют 70 спектаклей для аудитории зрителей самого юного возраста по произведениям русской и зарубежной классики, русских народных сказок, фольклора и лучших авторов современной литературы.</p></div></div>
+                </div>
+                <div class="card" data-card="4">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🎨</span><span class="card-title">Куклы и мастера</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Каждая кукла в театре — это уникальное произведение искусства. Они создаются вручную художниками и мастерами бутафорского цеха.</p><p>Для управления куклами требуются высочайшее мастерство, координация и актёрский талант, чтобы вдохнуть в неодушевлённый предмет живую душу.</p></div></div>
+                </div>
+                <div class="card" data-card="5">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏆</span><span class="card-title">Фестивали и признание</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Театр является регулярным участником и лауреатом всероссийских и международных фестивалей театрального искусства.</p><p>Коллектив неоднократно отмечен профессиональными премиями за вклад в развитие культуры и сохранение традиций кукольного театра.</p></div></div>
+                </div>
+                <div class="card" data-card="6">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🗺️</span><span class="card-title">Где находится?</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Театр расположен в самом сердце исторического центра Владимира.</p><p><strong>Адрес:</strong> г. Владимир, ул. Большая Московская, д. 12.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-tasks" class="page">
+            <div class="test-container">
+                <div class="progress-bar-wrapper"><div class="progress-bar-fill" id="progressFill" style="width: 16.6%"></div></div>
+                <p class="progress-text" id="progressText">Вопрос 1 из 6</p>
+
+                <div class="task-slide active" id="slide1">
+                    <div class="task-block" id="task1">
+                        <div class="test-image-wrapper"><img src="/images/kukla/kukla1.jpg" alt="Задание 1" class="test-question-image" loading="eager" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 1: Выбери правильный ответ</h2>
+                            <p class="task-question">В каком году был основан Владимирский областной театр кукол?</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q1" value="a"><span>1912 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="b"><span>1944 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="c"><span>1969 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="d"><span>1984 год</span></label>
+                            </div>
+                            <button class="check-btn" data-task="1">Проверить</button>
+                            <p class="feedback" id="feedback1"></p>
+                            <button class="next-slide-btn" data-target="slide2" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide2">
+                    <div class="task-block" id="task2">
+                        <div class="test-image-wrapper"><img src="/images/kukla/kukla2.jpg" alt="Задание 2" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 2: Выбери правильный ответ</h2>
+                            <p class="task-question">На какой улице располагается театр кукол?</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q2" value="a"><span>Большая Московская</span></label>
+                                <label class="option"><input type="radio" name="q2" value="b"><span>Дворянская</span></label>
+                                <label class="option"><input type="radio" name="q2" value="c"><span>Мира</span></label>
+                                <label class="option"><input type="radio" name="q2" value="d"><span>Гагарина</span></label>
+                            </div>
+                            <button class="check-btn" data-task="2">Проверить</button>
+                            <p class="feedback" id="feedback2"></p>
+                            <button class="next-slide-btn" data-target="slide3" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide3">
+                    <div class="task-block" id="task3">
+                        <div class="test-image-wrapper"><img src="/images/kukla/kukla3.jpg" alt="Задание 3" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 3: Верно или неверно?</h2>
+                            <p class="task-question">Театр кукол ставит спектакли исключительно для детей дошкольного возраста.</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q3" value="a"><span>Верно ✅</span></label>
+                                <label class="option"><input type="radio" name="q3" value="b"><span>Неверно ❌</span></label>
+                            </div>
+                            <button class="check-btn" data-task="3">Проверить</button>
+                            <p class="feedback" id="feedback3"></p>
+                            <button class="next-slide-btn" data-target="slide4" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide4">
+                    <div class="task-block" id="task4">
+                        <div class="test-image-wrapper"><img src="/images/kukla/kukla4.jpg" alt="Задание 4" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 4: Вставь пропущенное слово</h2>
+                            <p class="task-question">Куклы для спектаклей создаются вручную __________ театра.</p>
+                            <div class="fill-blank">
+                                <input type="text" id="answer4" placeholder="Введи слово..." class="fill-input">
+                                <button class="check-btn" data-task="4">Проверить</button>
+                            </div>
+                            <p class="feedback" id="feedback4"></p>
+                            <button class="next-slide-btn" data-target="slide5" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide5">
+                    <div class="task-block" id="task5">
+                        <div class="test-image-wrapper"><img src="/images/kukla/kukla5.jpg" alt="Задание 5" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 5: Верно или неверно?</h2>
+                            <p class="task-question">Здание, в котором располагается театр, построено в стиле классицизма.</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q5" value="a"><span>Верно ✅</span></label>
+                                <label class="option"><input type="radio" name="q5" value="b"><span>Неверно ❌</span></label>
+                            </div>
+                            <button class="check-btn" data-task="5">Проверить</button>
+                            <p class="feedback" id="feedback5"></p>
+                            <button class="next-slide-btn" data-target="slide6" style="display: none;">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide6">
+                    <div class="task-block" id="task6">
+                        <div class="test-image-wrapper"><img src="/images/teatr-kukol/teatr-kukol.png" alt="Задание 6" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 6: Вставь пропущенное слово</h2>
+                            <p class="task-question">Театр является регулярным участником всероссийских и __________ фестивалей.</p>
+                            <div class="fill-blank">
+                                <input type="text" id="answer6" placeholder="Введи слово..." class="fill-input">
+                                <button class="check-btn" data-task="6">Проверить</button>
+                            </div>
+                            <p class="feedback" id="feedback6"></p>
+                            <button class="next-slide-btn" data-target="results" style="display: none;">Завершить тест</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-slide" id="resultsSlide">
+                    <div class="results-block">
+                        <h2 class="results-title">Твои результаты</h2>
+                        <p class="results-text" id="resultsText"></p>
+                        <table class="results-table">
+                            <thead><tr><th>Задание</th><th>Результат</th></tr></thead>
+                            <tbody id="resultsBody"></tbody>
+                        </table>
+                        <div class="results-buttons">
+                            <button class="retry-btn" id="retryBtn">Пройти заново</button>
+                            <button class="back-to-map-btn" id="backToMapBtn">🗺️ Вернуться к карте</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/info-page.js"></script>
+
+    <script>
+    const CORRECT = { 
+        1: 'с', 
+        2: 'a', 
+        3: 'b', 
+        4: 'художниками', 
+        5: 'a', 
+        6: 'международных' 
+    };
+    
+    const EXPLANATIONS = {
+        1: 'Владимирский областной театр кукол был основан в 1969 году и с тех пор дарит радость зрителям всех поколений.',
+        2: 'Театр располагается в историческом здании по адресу: г. Владимир, ул. Большая Московская, д. 12.',
+        3: 'В репертуаре театра есть как детские сказки, так и глубокие постановки, рассчитанные на взрослую аудиторию.',
+        4: 'Куклы являются уникальными произведениями искусства, которые создаются вручную художниками бутафорского цеха театра.',
+        5: 'Здание театра является памятником архитектуры, построенном в стиле классицизма.',
+        6: 'Театр широко известен за пределами региона и регулярно участвует в российских и международных театральных фестивалях, завоевая награды.'
+    };
+</script>
+</body>
+</html>
+

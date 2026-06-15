@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Владимира</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #1a1a2e;
+            overflow: hidden;
+        }
+
+        .map-scroller {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .map-scroller::-webkit-scrollbar {
+            display: none;
+        }
+
+        .map-container {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            width: max(100vw, 177.78vh);
+            height: 100vh;
+            flex-shrink: 0;
+            background-image: url('/images/vladimir_map.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        .pin {
+            position: absolute;
+            cursor: pointer;
+            width: 9.5%;
+            height: auto;
+            z-index: 5;
+        }
+
+        .pin img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s ease;
+            transform-origin: center center;
+            transform: rotate(var(--pin-rotation, 0deg)) scale(var(--pin-scale, 1));
+        }
+
+        .pin:hover {
+            z-index: 10;
+        }
+
+        .pin:hover img {
+            transform: rotate(var(--pin-rotation, 0deg)) scale(calc(var(--pin-scale, 1) * 1.1));
+        }
+
+        .pin1 { top: 40%; left: 85%; }
+        .pin2 { top: 10%; left: 55%; }
+        .pin3 { top: 56%; left: 11%; }
+        .pin4 { top: 29%; left: 20%; }
+        .pin5 { top: 75%; left: 22%; }
+        .pin6 { top: 14%; left: 75%; }
+        .pin7 { top: 49%; left: 29%; }
+        .pin8 { top: 52%; left: 73%; }
+        .pin9 { top: 14%; left: 31%; }
+        .pin10 { top: 67%; left: 49%; }
+        .pin11 { top: 37%; left: 46%; }
+
+        .page-fade-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            z-index: 99999;
+            pointer-events: none;
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .page-fade-overlay.loaded {
+            opacity: 0;
+        }
+
+        .page-fade-overlay.exiting {
+            opacity: 1;
+            pointer-events: all;
+            transition: opacity 0.35s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-fade-overlay" id="pageFadeOverlay"></div>
+
+    <div class="map-scroller">
+        <div class="map-container">
+            <a href="dmitrievsky-sobor.html" class="pin pin1"><img src="/images/karta/dmitrievskyi_sobor.png" alt="Дмитриевский собор"></a>
+            <a href="nikitskaya-cerkov.html" class="pin pin2"><img src="/images/karta/nikitskaya_cerkov.png" alt="Никитская церковь"></a>
+            <a href="vodri.html" class="pin pin3"><img src="/images/karta/odri.png" alt="ОДРИ"></a>
+            <a href="gimnaziya.html" class="pin pin4"><img src="/images/karta/pervaya_gimnasiya.png" alt="Первая гимназия"></a>
+            <a href="teatr-dramy.html" class="pin pin5"><img src="/images/karta/teatr_dramy.png" alt="Театр драмы"></a>
+            <a href="teatr-kukol.html" class="pin pin6"><img src="/images/karta/teatr_kukol.png" alt="Театр кукол"></a>
+            <a href="troitskaya-cerkov.html" class="pin pin7"><img src="/images/karta/troitskaya_cerkov.png" alt="Троицкая церковь"></a>
+            <a href="uspensky-sobor.html" class="pin pin8"><img src="/images/karta/uspenskyi_sobor.png" alt="Успенский собор"></a>
+            <a href="vlgu.html" class="pin pin9"><img src="/images/karta/vlgu_staryi_corpus.png" alt="ВлГУ"></a>
+            <a href="vodonapornaya-bashnya.html" class="pin pin10"><img src="/images/karta/vodonapornaya_bashnya.png" alt="Водонапорная башня"></a>
+            <a href="zolotye-vorota.html" class="pin pin11"><img src="/images/karta/zolotye_vorota.png" alt="Золотые ворота"></a>
+        </div>
+    </div>
+
+    <script>
+        const pinSettings = {
+            pin1:  { scale: 1.2,  rotation: 0 },
+            pin2:  { scale: 1.3, rotation: 0},
+            pin3:  { scale: 1.6, rotation: 0 },
+            pin4:  { scale: 2.1,  rotation: 5 },
+            pin5:  { scale: 1.6,  rotation: 0 },
+            pin6:  { scale: 1.3, rotation: -20 },
+            pin7:  { scale: 1.3,  rotation: 0 },
+            pin8:  { scale: 1.55,  rotation: 0 },
+            pin9:  { scale: 1.4,  rotation: 3 },
+            pin10: { scale: 1.2, rotation: 0 },
+            pin11: { scale: 1.3,  rotation: 0 }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            Object.keys(pinSettings).forEach(pinClass => {
+                const settings = pinSettings[pinClass];
+                const pinEl = document.querySelector('.' + pinClass);
+                if (pinEl) {
+                    const imgEl = pinEl.querySelector('img');
+                    if (imgEl) {
+                        imgEl.style.setProperty('--pin-scale', settings.scale);
+                        imgEl.style.setProperty('--pin-rotation', settings.rotation + 'deg');
+                    }
+                }
+            });
+
+            const overlay = document.getElementById('pageFadeOverlay');
+            const scroller = document.querySelector('.map-scroller');
+            const SCROLL_KEY_X = 'vladimir_map_scroll_x';
+            const SCROLL_KEY_Y = 'vladimir_map_scroll_y';
+            const TRANSITION_EXIT_MS = 350;
+
+            if (scroller) {
+                const savedX = sessionStorage.getItem(SCROLL_KEY_X);
+                const savedY = sessionStorage.getItem(SCROLL_KEY_Y);
+
+                const restoreScroll = () => {
+                    if (savedX !== null) scroller.scrollLeft = parseFloat(savedX);
+                    if (savedY !== null) scroller.scrollTop = parseFloat(savedY);
+                };
+
+                requestAnimationFrame(() => {
+                    restoreScroll();
+                    requestAnimationFrame(restoreScroll);
+                });
+
+                let saveTimeout;
+                scroller.addEventListener('scroll', () => {
+                    clearTimeout(saveTimeout);
+                    saveTimeout = setTimeout(() => {
+                        sessionStorage.setItem(SCROLL_KEY_X, scroller.scrollLeft.toString());
+                        sessionStorage.setItem(SCROLL_KEY_Y, scroller.scrollTop.toString());
+                    }, 50);
+                });
+
+                window.addEventListener('pagehide', () => {
+                    sessionStorage.setItem(SCROLL_KEY_X, scroller.scrollLeft.toString());
+                    sessionStorage.setItem(SCROLL_KEY_Y, scroller.scrollTop.toString());
+                });
+            }
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    overlay.classList.add('loaded');
+                    setTimeout(() => overlay.remove(), 600);
+                });
+            });
+
+            document.querySelectorAll('a').forEach(anchor => {
+                anchor.addEventListener('click', (evt) => {
+                    if (evt.ctrlKey || evt.metaKey || evt.shiftKey || evt.altKey) return;
+
+                    const targetHref = anchor.getAttribute('href');
+                    if (!targetHref || targetHref.startsWith('#') || targetHref.startsWith('javascript:') ||
+                        targetHref.startsWith('mailto:') || targetHref.startsWith('tel:') || targetHref.startsWith('blob:')) return;
+
+                    evt.preventDefault();
+
+                    overlay.classList.remove('loaded');
+                    overlay.classList.add('exiting');
+
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, TRANSITION_EXIT_MS);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Водонапорная башня</title>
+    <link rel="stylesheet" href="/css/info-page.css">
+</head>
+<body data-monument="vodonapornaya-bashnya">
+    <header class="site-header">
+        <nav class="top-nav" id="topNav">
+            <div class="nav-group-left" id="navLeft"></div>
+            <div class="nav-group-right" id="navRight"></div>
+        </nav>
+    </header>
+
+    <main class="app-container">
+        <section id="page-main" class="page active">
+            <div class="main-layout">
+                <div class="main-image-col">
+                    <div class="hero-image-wrapper">
+                        <img src="/images/vodnap/vod-nap.jpg" alt="Водонапорная башня Владимира" class="hero-image" loading="eager" decoding="async">
+                    </div>
+                </div>
+                <div class="main-text-col">
+                    <div class="welcome-section">
+                        <h1 class="hero-title">Водонапорная башня</h1>
+                        <p class="welcome-text"><strong>Водонапорная башня</strong> — уникальный архитектурный памятник в псевдоготическом стиле, построенный в <strong>1912 году</strong>. Сегодня в её стенах располагается музей «Старый Владимир». <br>Узнай больше фактов об этом знаменитом сооружении и проверь свою память, ответив на вопросы теста, или проверь свои знания сразу, перейдя к тесту!</p>
+                    </div>
+                    <div class="nav-cards">
+                        <div class="nav-card" onclick="switchPage('page-info')">
+                            <span class="nav-card-icon">🔍</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Узнай больше!</h3>
+                                <p class="nav-card-desc">История, архитектура, интересные факты и многое другое в раскрывающихся карточках.</p>
+                            </div>
+                        </div>
+                        <div class="nav-card" onclick="switchPage('page-tasks')">
+                            <span class="nav-card-icon">✏️</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Проверь себя!</h3>
+                                <p class="nav-card-desc">Проверь свои знания с помощью увлекательных заданий и тестов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-info" class="page">
+            <div class="info-hero">
+                <div class="hero-image-wrapper">
+                    <img src="/images/vodnap/vodnapinfo.jpg" alt="Водонапорная башня" class="hero-image" loading="eager" decoding="async">
+                </div>
+                <h1 class="hero-title">Водонапорная башня</h1>
+                <p class="hero-subtitle">Уникальный памятник псевдоготики и музей «Старый Владимир»</p>
+            </div>
+            <p class="section-subtitle">Нажми на карточку, чтобы прочитать подробнее</p>
+
+            <div class="cards-grid">
+                <div class="card" data-card="1">
+                    <button class="card-header" aria-expanded="false">
+                        <span class="card-icon">🏛️</span><span class="card-title">Когда и кем построена?</span><span class="card-arrow">▼</span>
+                    </button>
+                    <div class="card-body"><div class="card-body-inner"><p>Водонапорная башня была построена <strong>в 1912 году</strong> по проекту городского архитектора <strong>Константина Яблочкова</strong>.</p><p>Сооружение стало важной частью городской инфраструктуры, обеспечивая стабильную подачу воды в жилые кварталы.</p></div></div>
+                </div>
+                <div class="card" data-card="2">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏗️</span><span class="card-title">Архитектурный стиль</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Здание выполнено в стиле <strong>псевдоготики</strong>. Оно сложено из <strong>красного кирпича</strong> и имеет зубчатые стены, узкие окна-бойницы и декоративные элементы.</p><p>Благодаря такой архитектуре башня напоминает средневековый замок и является одной из визитных карточек города.</p></div></div>
+                </div>
+                <div class="card" data-card="3">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">💧</span><span class="card-title">Для чего была построена?</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Главной функцией башни была <strong>подача воды в верхнюю, нагорную часть города</strong> Владимира.</p><p>Из-за значительного перепада высот в этой части города не хватало давления в водопроводной сети, и башня с резервуаром решала эту проблему.</p></div></div>
+                </div>
+                <div class="card" data-card="4">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏛️</span><span class="card-title">Музей «Старый Владимир»</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>С <strong>1970-х годов</strong> в здании бывшей водонапорной башни располагается музей <strong>«Старый Владимир»</strong>.</p><p>Экспозиция музея посвящена истории города конца XIX – начала XX века и содержит уникальные фотографии, документы и предметы быта дореволюционной эпохи.</p></div></div>
+                </div>
+                <div class="card" data-card="5">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">📖</span><span class="card-title">Интересные факты</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Высота башни составляет около <strong>23 метров</strong>.</p><p>Несмотря на то, что своё прямое инженерное назначение она выполняла недолго, башня стала одним из самых узнаваемых и фотографируемых символов Владимира.</p></div></div>
+                </div>
+                <div class="card" data-card="6">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🗺️</span><span class="card-title">Где находится?</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Водонапорная башня расположена в <strong>центре города</strong>, на улице Большая Московская, в непосредственной близости от Золотых ворот.</p><p><strong>Адрес:</strong> г. Владимир, ул. Большая Московская.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-tasks" class="page">
+            <div class="test-container">
+                <div class="progress-bar-wrapper"><div class="progress-bar-fill" id="progressFill" style="width: 16.6%"></div></div>
+                <p class="progress-text" id="progressText">Вопрос 1 из 6</p>
+
+                <div class="task-slide active" id="slide1">
+                    <div class="task-block" id="task1">
+                        <div class="test-image-wrapper"><img src="/images/vodnap/vodnap1.jpg" alt="Общий вид" class="test-question-image" loading="eager" decoding="async"></div>
+                        <h2 class="task-title">Задание 1: Выбери правильный ответ</h2>
+                        <p class="task-question">Когда во Владимире появилась Водонапорная башня?</p>
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q1" value="a"><span>в 1960-х годах</span></label>
+                            <label class="option"><input type="radio" name="q1" value="b"><span>в 1860-х годах</span></label>
+                            <label class="option"><input type="radio" name="q1" value="c"><span>в 1910-х годах</span></label>
+                            <label class="option"><input type="radio" name="q1" value="d"><span>в 1790-х годах</span></label>
+                        </div>
+                        <button class="check-btn" data-task="1">Проверить</button>
+                        <p class="feedback" id="feedback1"></p>
+                        <button class="next-slide-btn" data-target="slide2">Далее →</button>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide2">
+                    <div class="task-block" id="task2">
+                        <div class="test-image-wrapper"><img src="/images/vodnap/vodnap2.jpg" alt="Архитектура башни" class="test-question-image" decoding="async"></div>
+                        <h2 class="task-title">Задание 2: Выбери правильный ответ</h2>
+                        <p class="task-question">Кто был автором проекта реконструкции водонапорной башни?</p>
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q2" value="a"><span>А.Д. Крячков</span></label>
+                            <label class="option"><input type="radio" name="q2" value="b"><span>С.М. Жаров</span></label>
+                            <label class="option"><input type="radio" name="q2" value="c"><span>В.А. Покровский</span></label>
+                            <label class="option"><input type="radio" name="q2" value="d"><span>Ф.О. Шехтель</span></label>
+                        </div>
+                        <button class="check-btn" data-task="2">Проверить</button>
+                        <p class="feedback" id="feedback2"></p>
+                        <button class="next-slide-btn" data-target="slide3">Далее →</button>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide3">
+                    <div class="task-block" id="task3">
+                        <div class="test-image-wrapper"><img src="/images/vodnap/vodnap3.jpg" alt="Фрагмент кладки" class="test-question-image" decoding="async"></div>
+                        <h2 class="task-title">Задание 3: Верно или неверно?</h2>
+                        <p class="task-question">Водонапорная башня построена в стиле псевдоготики.</p>
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q3" value="a"><span>Верно ✅</span></label>
+                            <label class="option"><input type="radio" name="q3" value="b"><span>Неверно ❌</span></label>
+                        </div>
+                        <button class="check-btn" data-task="3">Проверить</button>
+                        <p class="feedback" id="feedback3"></p>
+                        <button class="next-slide-btn" data-target="slide4">Далее →</button>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide4">
+                    <div class="task-block" id="task4">
+                        <div class="test-image-wrapper"><img src="/images/vodnap/vodnap4.jpg" alt="Кирпичная кладка" class="test-question-image" decoding="async"></div>
+                        <h2 class="task-title">Задание 4: Вставь пропущенное слово</h2>
+                        <p class="task-question">Сейчас в водонапорной башне располагается музей "________  ________".</p>
+                        <div class="fill-blank">
+                            <input type="text" id="answer4" placeholder="Введи слово..." class="fill-input">
+                            <button class="check-btn" data-task="4">Проверить</button>
+                        </div>
+                        <p class="feedback" id="feedback4"></p>
+                        <button class="next-slide-btn" data-target="slide5">Далее →</button>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide5">
+                    <div class="task-block" id="task5">
+                        <div class="test-image-wrapper"><img src="/images/vodnap/vodnap5.jpg" alt="Верхняя часть" class="test-question-image" decoding="async"></div>
+                        <h2 class="task-title">Задание 5: Верно или неверно?</h2>
+                        <p class="task-question">Водонапорная башня была построена для подачи воды в верхнюю нагорную часть города.</p>
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q5" value="a"><span>Верно ✅</span></label>
+                            <label class="option"><input type="radio" name="q5" value="b"><span>Неверно ❌</span></label>
+                        </div>
+                        <button class="check-btn" data-task="5">Проверить</button>
+                        <p class="feedback" id="feedback5"></p>
+                        <button class="next-slide-btn" data-target="slide6">Далее →</button>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide6">
+                    <div class="task-block" id="task6">
+                        <div class="test-image-wrapper"><img src="/images/vodnap/vodnap6.jpg" alt="Вид сбоку" class="test-question-image" decoding="async"></div>
+                        <h2 class="task-title">Задание 6: Вставь пропущенное слово</h2>
+                        <p class="task-question">По прямому назначению башня использовалась вплоть до _______ XX века. </p>
+                        <div class="fill-blank">
+                            <input type="text" id="answer6" placeholder="Введи слово..." class="fill-input">
+                            <button class="check-btn" data-task="6">Проверить</button>
+                        </div>
+                        <p class="feedback" id="feedback6"></p>
+                        <button class="next-slide-btn" data-target="results">Завершить тест</button>
+                    </div>
+                </div>
+
+                <div class="results-slide" id="resultsSlide">
+                    <div class="results-block">
+                        <h2 class="results-title">Твои результаты</h2>
+                        <p class="results-text" id="resultsText"></p>
+                        <table class="results-table">
+                            <thead><tr><th>Задание</th><th>Результат</th></tr></thead>
+                            <tbody id="resultsBody"></tbody>
+                        </table>
+                        <div class="results-buttons">
+                            <button class="retry-btn" id="retryBtn">Пройти заново</button>
+                            <button class="back-to-map-btn" id="backToMapBtn">🗺️ Вернуться к карте</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/info-page.js"></script>
+
+    <script>
+    const CORRECT = { 
+        1: 'b', 
+        2: 'b', 
+        3: 'b', 
+        4: 'старый владимир', 
+        5: 'a', 
+        6: 'середины' 
+    };
+    
+    const EXPLANATIONS = {
+        1: 'Башня была возведена на Козловом валу к югу от Золотых ворот по проекту К. К. Дилля в период разработки системы водоснабжения города. Строительство закончилось в 1868-м (по другим данным в 1866) году.',
+        2: 'В 1912 году это здание было совершенно перестроено по проекту городского архитектора Сергея Жарова. Помимо чисто утилитарного назначения башни, архитектор позаботился и о ее внешнем виде.',
+        3: 'Здание выполнено в неорусском стиле: оно имеет зубчатые стены, узкие окна-бойницы, стрельчатые арки и арочные ниши,.',
+        4: 'С 1970-х годов в здании бывшей водонапорной башни располагается музей «Старый Владимир», посвящённый истории города конца XIX – начала XX века.',
+        5: 'Главной функцией башни была подача воды в верхнюю, нагорную часть Владимира, где из-за перепада высот ощущалась нехватка водопроводного давления.',
+        6: 'Подача воды прекратилась в 50-е годы прошлого столетия. Какое-то время там ютились бродяги. В 1970-е годы здание было реставрировано, а в 1975 году в ней был открыта музейная экспозиция и смотровая площадка.'
+    };
+</script>
+</body>
+</html>
+

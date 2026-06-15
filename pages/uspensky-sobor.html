@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Успенский собор</title>
+    <link rel="stylesheet" href="/css/info-page.css">
+</head>
+<body data-monument="uspensky-sobor">
+    <header class="site-header">
+        <nav class="top-nav" id="topNav">
+            <div class="nav-group-left" id="navLeft"></div>
+            <div class="nav-group-right" id="navRight"></div>
+        </nav>
+    </header>
+
+     <main class="app-container">
+        <section id="page-main" class="page active">
+            <div class="main-layout">
+                <div class="main-image-col">
+                    <div class="hero-image-wrapper">
+                        <img src="/images/uspsob/uspsobinfo.jpg" alt="Успенский собор Владимира" class="hero-image" loading="eager" decoding="async">
+                    </div>
+                </div>
+                <div class="main-text-col">
+                    <div class="welcome-section">
+                        <h1 class="hero-title">Успенский собор</h1>
+                        <p class="welcome-text"><strong>Успенский собор</strong> — величественный белокаменный храм XII века, главный духовный центр Владимиро-Суздальской Руси. <br>Узнай больше фактов об этом шедевре мирового зодчества, включенном в список наследия ЮНЕСКО, и проверь свою память, ответив на вопросы теста!</p>
+                    </div>
+                    <div class="nav-cards">
+                        <div class="nav-card" onclick="switchPage('page-info')">
+                            <span class="nav-card-icon">🔍</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Узнай больше!</h3>
+                                <p class="nav-card-desc">История, архитектура, фрески Рублёва и интересные факты в раскрывающихся карточках.</p>
+                            </div>
+                        </div>
+                        <div class="nav-card" onclick="switchPage('page-tasks')">
+                            <span class="nav-card-icon">✏️</span>
+                            <div class="nav-card-body">
+                                <h3 class="nav-card-title">Проверь себя!</h3>
+                                <p class="nav-card-desc">Проверь свои знания с помощью увлекательных заданий и тестов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-info" class="page">
+            <div class="info-hero">
+                <div class="hero-image-wrapper">
+                    <img src="/images/uspsob/uspsobglavnaya.jpg" alt="Успенский собор" class="hero-image" loading="eager" decoding="async">
+                </div>
+                <h1 class="hero-title">Успенский собор</h1>
+                <p class="hero-subtitle">Духовное сердце и архитектурная жемчужина Древней Руси</p>
+            </div>
+
+            <h2 class="section-title">Узнай больше об Успенском соборе</h2>
+            <p class="section-subtitle">Нажми на карточку, чтобы прочитать подробнее</p>
+
+            <div class="cards-grid">
+                <div class="card" data-card="1">
+                    <button class="card-header" aria-expanded="false">
+                        <span class="card-icon">🏛️</span><span class="card-title">Когда и кем построен?</span><span class="card-arrow">▼</span>
+                    </button>
+                    <div class="card-body"><div class="card-body-inner"><p>Строительство собора было начато <strong>в 1158 году</strong> по приказу князя <strong>Андрея Боголюбского</strong>.</p><p>В 1185–1189 годах, при князе Всеволоде Большое Гнездо, храм был значительно расширен и перестроен, обретя свой нынешний величественный облик.</p></div></div>
+                </div>
+                <div class="card" data-card="2">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🏗️</span><span class="card-title">Архитектурные особенности</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Собор является ярчайшим образцом <strong>владимиро-суздальской белокаменной архитектуры</strong>.</p><p>Пятиглавый храм украшен изящной каменной резьбой, аркатурно-колончатым поясом и позолоченными воротами, созданными мастерами той эпохи.</p></div></div>
+                </div>
+                <div class="card" data-card="3">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🎨</span><span class="card-title">Фрески Андрея Рублёва</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>В <strong>1408 году</strong> интерьер собора расписали великие иконописцы <strong>Андрей Рублёв и Даниил Чёрный</strong>.</p><p>До наших дней сохранились фрагменты их уникальных фресок, включая знаменитую композицию «Страшный суд», которая считается вершиной древнерусской живописи.</p></div></div>
+                </div>
+                <div class="card" data-card="4">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">✨</span><span class="card-title">Главная святыня</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>На протяжении столетий в соборе хранилась главная святыня Руси — <strong>Владимирская икона Божией Матери</strong>.</p><p>В 1395 году икона была перенесена в Москву для защиты города от нашествия Тамерлана, где и находится по сей день.</p></div></div>
+                </div>
+                <div class="card" data-card="5">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">📜</span><span class="card-title">Историческое значение</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Собор был <strong>главным храмом Северо-Восточной Руси</strong>. Здесь венчались на великое княжение владимирские и московские князья.</p><p>В храме находятся захоронения великих князей, а также мощи святого благоверного князя Андрея Боголюбского.</p></div></div>
+                </div>
+                <div class="card" data-card="6">
+                    <button class="card-header" aria-expanded="false"><span class="card-icon">🗺️</span><span class="card-title">Где находится?</span><span class="card-arrow">▼</span></button>
+                    <div class="card-body"><div class="card-body-inner"><p>Собор расположен на <strong>Соборной площади</strong>, на высоком берегу реки Клязьмы, доминируя в панораме исторического центра города.</p><p><strong>Адрес:</strong> г. Владимир, ул. Соборная площадь.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-tasks" class="page">
+            <div class="test-container">
+                <div class="progress-bar-wrapper"><div class="progress-bar-fill" id="progressFill" style="width: 16.6%"></div></div>
+                <p class="progress-text" id="progressText">Вопрос 1 из 6</p>
+
+                <div class="task-slide active" id="slide1">
+                    <div class="task-block" id="task1">
+                        <div class="test-image-wrapper"><img src="/images/uspsob/uspsobtest1.jpg" alt="Общий вид собора" class="test-question-image" loading="eager" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 1: Выбери правильный ответ</h2>
+                            <p class="task-question">В каком году было начато строительство Успенского собора?</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q1" value="a"><span>1058 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="b"><span>1158 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="c"><span>1258 год</span></label>
+                                <label class="option"><input type="radio" name="q1" value="d"><span>1358 год</span></label>
+                            </div>
+                            <button class="check-btn" data-task="1">Проверить</button>
+                            <p class="feedback" id="feedback1"></p>
+                            <button class="next-slide-btn" data-target="slide2">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide2">
+                    <div class="task-block" id="task2">
+                        <div class="test-image-wrapper"><img src="/images/uspsob/uspsobtest2.jpg" alt="Архитектура собора" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 2: Выбери правильный ответ</h2>
+                            <p class="task-question">Какой великий князь начал строительство этого храма?</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q2" value="a"><span>Ярослав Мудрый</span></label>
+                                <label class="option"><input type="radio" name="q2" value="b"><span>Андрей Боголюбский</span></label>
+                                <label class="option"><input type="radio" name="q2" value="c"><span>Александр Невский</span></label>
+                                <label class="option"><input type="radio" name="q2" value="d"><span>Дмитрий Донской</span></label>
+                            </div>
+                            <button class="check-btn" data-task="2">Проверить</button>
+                            <p class="feedback" id="feedback2"></p>
+                            <button class="next-slide-btn" data-target="slide3">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide3">
+                    <div class="task-block" id="task3">
+                        <div class="test-image-wrapper"><img src="/images/uspsob/uspsobtest3.jpg" alt="Фрески" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 3: Верно или неверно?</h2>
+                            <p class="task-question">Фрески в соборе в 1408 году создали Андрей Рублёв и Даниил Чёрный.</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q3" value="a"><span>Верно ✅</span></label>
+                                <label class="option"><input type="radio" name="q3" value="b"><span>Неверно ❌</span></label>
+                            </div>
+                            <button class="check-btn" data-task="3">Проверить</button>
+                            <p class="feedback" id="feedback3"></p>
+                            <button class="next-slide-btn" data-target="slide4">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide4">
+                    <div class="task-block" id="task4">
+                        <div class="test-image-wrapper"><img src="/images/uspsob/uspsobtest4.jpg" alt="Белокаменная резьба" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 4: Вставь пропущенное слово</h2>
+                            <p class="task-question">Успенский собор является шедевром белокаменного зодчества и построен из белого __________.</p>
+                            <div class="fill-blank">
+                                <input type="text" id="answer4" placeholder="Введи слово..." class="fill-input">
+                                <button class="check-btn" data-task="4">Проверить</button>
+                            </div>
+                            <p class="feedback" id="feedback4"></p>
+                            <button class="next-slide-btn" data-target="slide5">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide5">
+                    <div class="task-block" id="task5">
+                        <div class="test-image-wrapper"><img src="/images/uspsob/uspsobtest5.jpg" alt="Купола собора" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 5: Верно или неверно?</h2>
+                            <p class="task-question">Успенский собор включён в список Всемирного наследия ЮНЕСКО.</p>
+                            <div class="options">
+                                <label class="option"><input type="radio" name="q5" value="a"><span>Верно ✅</span></label>
+                                <label class="option"><input type="radio" name="q5" value="b"><span>Неверно ❌</span></label>
+                            </div>
+                            <button class="check-btn" data-task="5">Проверить</button>
+                            <p class="feedback" id="feedback5"></p>
+                            <button class="next-slide-btn" data-target="slide6">Далее →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-slide" id="slide6">
+                    <div class="task-block" id="task6">
+                        <div class="test-image-wrapper"><img src="/images/uspsob/uspsobtest6.jpg" alt="Икона" class="test-question-image" decoding="async"></div>
+                        <div class="task-content">
+                            <h2 class="task-title">Задание 6: Вставь пропущенное слово</h2>
+                            <p class="task-question">До 1395 года в соборе хранилась главная святыня Руси — __________ икона Божией Матери.</p>
+                            <div class="fill-blank">
+                                <input type="text" id="answer6" placeholder="Введи слово..." class="fill-input">
+                                <button class="check-btn" data-task="6">Проверить</button>
+                            </div>
+                            <p class="feedback" id="feedback6"></p>
+                            <button class="next-slide-btn" data-target="results">Завершить тест</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-slide" id="resultsSlide">
+                    <div class="results-block">
+                        <h2 class="results-title">Твои результаты</h2>
+                        <p class="results-text" id="resultsText"></p>
+                        <table class="results-table">
+                            <thead><tr><th>Задание</th><th>Результат</th></tr></thead>
+                            <tbody id="resultsBody"></tbody>
+                        </table>
+                        <div class="results-buttons">
+                            <button class="retry-btn" id="retryBtn">Пройти заново</button>
+                            <button class="back-to-map-btn" id="backToMapBtn">🗺️ Вернуться к карте</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/info-page.js"></script>
+
+    <script>
+    const CORRECT = { 
+        1: 'b', 
+        2: 'b', 
+        3: 'a', 
+        4: 'камня', 
+        5: 'a', 
+        6: 'владимирская' 
+    };
+    
+    const EXPLANATIONS = {
+        1: 'Строительство Успенского собора было начато в 1158 году по приказу князя Андрея Боголюбского.',
+        2: 'Инициатором строительства первого каменного храма на этом месте стал великий князь Андрей Боголюбский.',
+        3: 'В 1408 году интерьер собора расписали великие иконописцы Андрей Рублёв и Даниил Чёрный.',
+        4: 'Собор является выдающимся памятником белокаменного зодчества и построен из белого камня (известняка).',
+        5: 'Верно. Успенский собор является объектом Всемирного наследия ЮНЕСКО в составе памятников Владимира и Суздаля.',
+        6: 'До 1395 года в соборе хранилась Владимирская икона Божией Матери, которая затем была перенесена в Москву.'
+    };
+</script>
+</body>
+</html>
+
